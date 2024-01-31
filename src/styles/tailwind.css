@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=Blinker:wght@600&family=Josefin+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Kumbh+Sans:wght@400;700&family=Lato:ital,wght@0,400;0,900;1,300&family=League+Spartan:wght@500;600;700&family=Manrope:wght@400;500&family=Nunito+Sans:opsz,wght@6..12,300;6..12,600;6..12,800&family=Open+Sans:wght@400;700&family=Outfit:wght@400;700&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,700;1,800&family=Roboto:ital,wght@0,500;1,400&family=Rubik:wght@300;400;500;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  @apply w-full h-full bg-brand-veryDarkBlue font-Rubik;
+}
+
+.main-section{
+  @apply h-screen flex justify-center items-center max-[786px]:h-full bg-transparent max-[786px]:pt-4 max-[786px]:pb-6 flex-col gap-6;
+}
+
+main {
+  @apply grid grid-cols-12 grid-rows-1 gap-5 h-[70%] w-[90%] place-content-center max-[786px]:grid-cols-1;
+}
+
+aside {
+  @apply col-span-4 row-span-1 bg-brand-darkBlue rounded-lg flex flex-col max-[786px]:col-span-1;
+}
+
+.aside-section{
+    @apply bg-brand-blue rounded-lg w-full flex flex-col gap-6 h-[70%] max-[786px]:pb-5 ;
+    font-weight: 300; 
+}
+
+article {
+  @apply col-span-8 row-span-1 min-[787px]:space-y-3  flex flex-col gap-y-3.5 h-full rounded-lg grid-cols-12 grid-rows-2 max-[786px]:col-span-1 max-[786px]:grid-cols-1;
+}
+
+.link{
+    @apply flex flex-col ml-4 my-auto;
+}
+
+.link li{
+    @apply list-none text-brand-paleBlue hover:text-white
+}
+
+.top-section {
+  @apply flex gap-4 col-span-12 row-span-1 w-full container h-[50%] max-[786px]:col-span-1 max-[786px]:flex-col; 
+}
+
+.bottom-section {
+  @apply flex gap-4 h-[50%] max-[786px]:col-span-1 max-[786px]:flex-col;
+  color:#bdc1ff;
+}
+
+
+
+
+.avatar{
+    @apply rounded-full border-4 border-white w-[55px] h-[55px] ml-4 mt-4 hover:cursor-pointer;
+}
+
+.first-card-text{
+    @apply text-brand-paleBlue text-base  ml-4
+}
+
+h1{
+    @apply ml-4 text-white font-thin text-3xl;
+
+}
+
+.background-wrapper img{
+  width: 30px;
+  height:auto;
+}
+
+.background-wrapper{
+  @apply col-span-3 row-span-1 grow rounded-lg min-[787px]:relative min-[787px]:flex min-[787px]:justify-center
+}
+
+.card-content{
+    @apply bg-brand-veryDarkBlue h-[80%] min-[787px]:h-[80%] mt-[55px] text-white flex flex-col hover:cursor-pointer min-[787px]:w-full hover:bg-brand-darkBlue min-[787px]:absolute min-[787px]:bottom-0 ;
+    border-radius: 0.9rem;
+}
+
+.work{
+    background-image: url("../resources/images/icon-work.svg");
+}
+
+.title-section{
+  @apply text-white mx-4 flex justify-between mt-5;
+  font-weight: 400;
+}
+
+.more-details{
+  @apply flex flex-col ml-4;
+}
+h2{
+  @apply text-5xl;
+  font-weight: 300;
+}
+
+.sub-head{
+  @apply text-brand-paleBlue
+}
+
+footer{
+  @apply text-brand-paleBlue min-[787px]:flex min-[787px]:relative justify-center
+}
+
+footer a {
+  @apply text-blue-800
+}
+
+
+
